@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="script.js"></script>
+    <script type="module" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r125/three.js"></script>
+</head>
+<body>
+    <button id="restore-all-windows" style="background-color: #00003E; color: white; border: 2px ridge silver; transition: 1s; opacity: 0;" onclick="this.style.opacity = '0';">restore all windows</button>
+    <div class="window" style="width: 250px; height: 250px; background-color: black;">
+        <div class="window-header">
+            <div class="window-title">sphere.js</div>
+            <div class="window-buttons">
+                <div class="window-button close"></div>
+            </div>
+        </div>
+        <div id="sphere-body" class="window-body" style="display: flex; justify-content: center; align-items: center;"></div>
+    </div>
+    <div class="window" style="width: 150px; height: 320px; background-color: black;">
+        <div class="window-header">
+            <div class="window-title">dithering.png</div>
+            <div class="window-buttons">
+                <div class="window-button close"></div>
+            </div>
+        </div>
+        <div class="window-body" style="display: flex; justify-content: center; align-items: center;"><img src="./windows/dithering.png"></div>
+    </div>
+    <div class="window" style="width: 320px; height: 660px; background-color: black;">
+        <div class="window-header">
+            <div class="window-title">tetris.js</div>
+            <div class="window-buttons">
+                <div class="window-button close"></div>
+            </div>
+        </div>
+        <div id="tetris-body" class="window-body" style="display: flex; justify-content: center; align-items: center;">
+            <button id="tetris-start">start</button>
+            <canvas width="320" height="640" id="game"></canvas>
+        </div>
+    </div>
+    <div class="window" style="width: 500px; height: 292px;">
+        <div class="window-header">
+            <div class="window-title">main.html</div>
+            <div class="window-buttons">
+                <div class="window-button close"></div>
+            </div>
+        </div>
+        <div id="main-body" class="window-body">
+            <div class="user-info">
+                <img src="https://cdn.discordapp.com/avatars/1116684894446288986/3fe598933776a0d96dcc0bb027f4359a.webp?size=128">
+                <div class="bio-container">
+                    <div class="name-container">
+                        <p class="user-name">q16</p>
+                        <p class="user-pronouns">@q16q<br>@blurflower</p>
+                    </div>
+                    <p class="user-bio">hi, i'm q16 (they/them)<br><br>i'm a software developer, music producer and graphic designer</p>
+                </div>
+            </div>
+            <div class="my-projects">
+                <h1>my current projects:</h1>
+                <div class="project">- <a href="https://github.com/q16q/blurcrypt">q16q/blurcrypt</a></div>
+                <div class="project">- <a href="https://github.com/q16q/qcore">q16q/qcore</a><span style="color: #999"> (discontinued)</span></div>
+            </div>
+        </div>
+    </div>
+    <script defer src="./sphere.js"></script>
+    <script defer src="./tetris.js"></script>
+</body>
+</html>
