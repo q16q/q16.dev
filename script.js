@@ -22,9 +22,11 @@ windowHeaders.forEach((header, index) => {
     let isDragging = false;
     let offset = [0, 0];
 
-    [[381, 490], [843, 470], [1087, 149], [407, 103]][index].forEach((x,y) => {
-        windowElement.style.left = `${x}px`;
-        windowElement.style.top = `${y}px`;
+    let coords = [[897, 325], [729, 471], [1127, 212], [352, 205]];
+    coords[index].forEach((x,y) => {
+        console.log(`setting style.${y == 0 ? 'left' : 'top'} to ${x}px`)
+        if(y == 0) windowElement.style.left = `${x}px`;
+        if(y == 1) windowElement.style.top = `${x}px`;
     })
 
     header.addEventListener('mousedown', (e) => {

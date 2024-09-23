@@ -2,7 +2,8 @@
 //create a scene
 const scene = new THREE.Scene();
 
-let clientX, clientY;
+let clientX = 820;
+let clientY = 320;
 
 //create a camera
 const camera = new THREE.PerspectiveCamera(
