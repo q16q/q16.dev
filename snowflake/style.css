@@ -4,10 +4,13 @@
 }
 
 body {
-    background-image: linear-gradient(to bottom, #131b25 0%, #131b25 50%, #47658b 100%);
-    height: 100vh;
+    height: 125vh;
     margin: 0;
     padding-top:20px;
+    zoom: 0.8; 
+    -moz-transform: scale(0.8); 
+    -moz-transform-origin: 0 0;
+    background-image: linear-gradient(to bottom, #131b25 0%, #131b25 50%, #47658b 100%);
 }
 
 .clouds {
