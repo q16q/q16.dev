@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>snowflake ❄️</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="script.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="clouds">
+        <img draggable="false" src="assets/modcloud.png" alt="mods" width="287" height="181">
+        <img draggable="false" src="assets/installcloud.png" alt="install" width="339" height="202">
+        <img draggable="false" src="assets/supportcloud.png" alt="support" width="363" height="196" onclick="window.open('https://discord.gg/HjzNuqekh4')">
+    </div>
+    <div class="snowflakes">
+        <img draggable="false" src="assets/sfmods.png" width="193" height="81">
+        <img draggable="false" src="assets/sfinstall.png" width="211" height="103">
+        <img draggable="false" src="assets/sfsupport.png" width="212" height="61">
+    </div>
+    <img draggable="false" src="assets/snowflake.png" alt="snowflake" id="main-pic">
+    <div class="main">
+        <img style="pointer-events: none;" draggable="false" id="info-pic" src="assets/info.png">
+        <div class="info">
+        </div>
+        <div class="buttons">
+            <button onclick="alert('no modpack started yet :(')" id="download-mods">download<br><span style="font-size: 24px;">(drive link)</span></button>
+            <button onclick="navigator.clipboard.writeText('snow.q16.dev'); alert('copied!')" id="copy-ip">copy ip<br><span style="font-size: 24px;">snow.q16.dev</span></button>
+        </div>
+    </div>
+    <p id="author">made by <a href="https://q16.dev">q16</a></p>
+</body>
+</html>

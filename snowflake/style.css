@@ -1,0 +1,129 @@
+@font-face {
+    font-family: IBMPlexSansMedium;
+    src: url(fonts/IBMPlexSans-Medium.ttf);
+}
+
+body {
+    background-image: linear-gradient(to bottom, #131b25 0%, #131b25 50%, #47658b 100%);
+    height: 100vh;
+    margin: 0;
+    padding-top:20px;
+}
+
+.clouds {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    position: relative;
+    user-select: none;
+}
+
+.clouds img {
+    cursor: pointer;
+}
+  
+.snowflakes {
+  position: absolute;
+  top: 15%; /* position the snowflakes below the clouds */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  display: flex;
+  gap: 60%;
+  justify-content: center;
+}
+
+#main-pic {
+    /* center horizontally */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+    width: 1138.76px;
+    height: 775px;
+}
+
+.main {
+    margin-top: 500px;
+    margin-left: -15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.info {
+    float: left;
+}
+
+#info-pic {
+    margin-top: -140px;
+    margin-right: 20px;
+    position: relative;
+    width: 745px;
+    height: 464px;
+    z-index: -1;
+}
+
+#info-text {
+    position: absolute;
+    z-index: 1;
+    left: 685px;
+    top: 790px;
+    font-family: IBMPlexSansMedium;
+    font-size: 36px;
+    width: 566px;
+    text-align: center;
+    color: white;
+}
+
+.buttons {
+  float: right;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.buttons button {
+    font-size: 48px;
+    line-height: 0.5;
+    border-radius: 37px;
+    width: 390px;
+    height:172px;
+    color: white;
+    font-family: IBMPlexSansMedium;
+    backdrop-filter: 10px;
+    cursor: pointer;
+}
+
+#download-mods {
+    background-color: rgba(157, 255, 198, 0.37);
+    border-color: rgba(181, 255, 186, 0.1);
+}
+
+#copy-ip {
+    background-color: rgba(157, 214, 255, 0.37);
+    border-color: rgba(157, 214, 255, 0.1);
+    line-height: 0.6;
+}
+
+#author {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-family: IBMPlexSansMedium;
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#author a {
+    color: white;
+}
+
+#author a:visited {
+    color: white;
+}
