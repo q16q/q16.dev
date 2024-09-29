@@ -11,6 +11,9 @@ body {
     -moz-transform: scale(0.8); 
     -moz-transform-origin: 0 0;
     background-image: linear-gradient(to bottom, #131b25 0%, #131b25 50%, #47658b 100%);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-color: #47658b;
 }
 
 .clouds {
@@ -112,6 +115,7 @@ body {
 
 #author {
     position: absolute;
+    opacity: 0.1;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
