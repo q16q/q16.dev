@@ -57,14 +57,6 @@ html {
     animation: float 6s ease-in-out infinite;
 }
 
-.centered {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    /* full viewport height */
-}
-
 .info {
     position: relative;
     display: flex;
@@ -86,7 +78,7 @@ html {
     padding: 0;
 }
 
-.bio-container {
+.hero-container {
     position: absolute;
     top: 50%;
     z-index: 1;
@@ -232,4 +224,40 @@ html {
 .avatar-container:hover .social-links {
     animation-play-state: paused;
     transition: transform 0.5s ease-in-out;
+}
+
+.bio-container {
+    position: absolute;
+    top: 260px;
+    width: 300px;
+    z-index: 1;
+    transform: translateY(20px);
+    animation: slideOut 1s ease-out forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+
+.bio {
+    max-width: 300px;
+    text-align: center;
+    color: #f0f0f0;
+}
+
+.bio > a {
+    color: #f0f0f0;
+    text-decoration: underline;
+    transition: .5s;
+}
+
+.main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center horizontally and vertically */
+    width: auto; /* Adjust width as needed */
+    height: auto; /* Adjust height as needed */
+    display: flex; /* Optional: Use Flexbox for child alignment */
+    flex-direction: column; /* Stack child elements vertically */
+    justify-content: center; /* Center child elements vertically */
+    align-items: center; /* Center child elements horizontally */
 }
